@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceBot - Inicio</title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+           <nav>
+                <a href="Inicio">Inicio</a>
+                <a href="Comandos">Comandos</a>
+                <a href="Update">Update</a>
+                <a href="Help">Help</a>
+               
+               <script> type="text/javascript" 
+                const buttons = document.querySelectorAll('a');
+                buttons.forEach(btn =>{
+                   btn.addEventListener('mouseenter', function(e){
+    
+                      let x = e.clientX - e.target.offsetLeft;
+                      let y = e.clientY - e.target.offsetTop;
+    
+                      let ripples = document.createElement('span');
+                      ripples.style.left = x +'px';
+                      ripples.style.top = y +'px';
+                      this.appendChild(ripples);
+    
+                      setTimeout(() =>{
+                         ripples.remove()
+                      }, 1000)
+                   })
+                })
+                </script>
+           </nav>
+          
+            <section class="textos-header">
+             <h1>SpaceBot</h1>
+             <h2>Bot multi funciones</h2>
+         </section>
+         
+         <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-3.67,81.41 C65.74,-25.16 311.23,157.39 500.00,49.98 L500.00,150.00 L-3.67,153.45 Z" style="stroke: none; fill: rgb(10, 9, 22);"></path></svg></div>
+    </header>
+    <main class="main-color">
+      <section class="about services">
+         <div class="contenedor">
+             <div class="funciones-cont">
+                 <div class="funciones-ind">
+                     <img src="img/undraw_grades_j6jn.svg" alt="">
+                        <h3>Niveles</h3>
+                          <p>Cuenta con un sistemas de niveles muy dinámico e innovador </p>
+                            </div>
+                               <div class="funciones-ind">
+                            <img src="img/undraw_finance_0bdk.svg" alt="">
+                          <h3>Economia</h3>
+                        <p>Sistema de economia de libre uso para vuestros servidores</p>
+                     </div>
+                   <div class="funciones-ind">
+                      <img src="img/undraw_Playful_cat_rchv.svg" alt="">
+                         <h3>Diversión y utulidad</h3>
+                       <p>Muchos comandos divertidos para que os divertais todos</p>
+                    </div>
+                  </div>
+              </div>
+           </section>
+     </main>
+  <footer>
+     <h2 class="titulo-final">&copy; SpaceBot | 2020</h2>
+  </footer>
+  
+    </body>
+</html>
