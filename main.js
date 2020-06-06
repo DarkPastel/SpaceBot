@@ -1,33 +1,8 @@
-let boton = document.getElementById("icono");
-let enlaces = document.getElementById("enlaces");
-let contador = 0;
+// sidebar toggle
+const btnToggle = document.querySelector('.toggle-btn');
 
-boton.addEventListener("click",function(){
-    if(contador == 0){
-        enlaces.className = ('enlaces dos');
-        contador=1;
-    }else{
-        enlaces.classList.remove('dos');
-        enlaces.className = ('enlaces uno');
-        contador = 0;
-    }
-})
-
-window.addEventListener('resize', function(){
-    if(screen.width > 750){
-        contador=0;
-        enlaces.classList.remove('dos');
-        enlaces.className = ('enlaces uno');
-
-    }
-})
-
-window.addEventListener('click',function(e){
-    console.log(e.target);
-    if(cerrado==false){
-        let span = document.querySelector('.links-header');
-        if(e.target == span){
-            contador=0;
-        }
-    }
+btnToggle.addEventListener('click', function () {
+  console.log('clik')
+  document.getElementById('sidebar').classList.toggle('active');
+  console.log(document.getElementById('sidebar'))
 });
